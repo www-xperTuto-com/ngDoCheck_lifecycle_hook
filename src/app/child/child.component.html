@@ -1,0 +1,8 @@
+
+<span>User Info :</span>
+<span>pseudo : {{ user?.pseudo }}</span>
+<span>firstName : {{ user?.firstName }}</span>
+<span>lastName : {{ user?.lastName }}</span>
+<span>email : {{ user?.email }}</span>
+<span> Change Log :</span>
+<ul><li *ngFor="let log of changelogList;"> {{ log }}</li></ul>

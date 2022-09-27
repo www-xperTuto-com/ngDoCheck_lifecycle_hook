@@ -1,0 +1,30 @@
+<form [formGroup]="userForm" (ngSubmit)="saveUser()">
+  <mat-card>
+    <section>
+      <mat-form-field>
+        <mat-label>Pseudo</mat-label>
+        <input class="label-input" formControlName="pseudo"  matInput type="text">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>FirstName</mat-label>
+        <input class="label-input" formControlName="firstName"  matInput type="text">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>LastName</mat-label>
+        <input class="label-input" formControlName="lastName"  matInput type="text">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>email</mat-label>
+        <input class="label-input" formControlName="email"  matInput type="text">
+      </mat-form-field>
+    </section>
+
+    <button type="submit">Save</button>
+  </mat-card>
+</form>
+
+<app-child [user]=userData></app-child>
+
